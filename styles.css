@@ -1,0 +1,97 @@
+/* Background styles */
+body {
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  line-height: 1.5;
+  color: black;
+  background-color: #ffffff;
+}
+
+/* Glassmorphism card effect */
+.container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+button {
+  color: #f9f9f9;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Large screens */
+  /* Styles for large screens (Desktops) */
+}
+
+@media screen and (max-width: 992px) {
+  /* Medium screens */
+  /* Styles for medium screens (Tablets) */
+}
+
+@media screen and (max-width: 768px) {
+  /* Small screens */
+  /* Styles for small screens (Mobile devices) */
+}
+
+@media screen and (max-width: 576px) {
+  /* Extra small screens */
+  /* Styles for extra small screens */
+}
