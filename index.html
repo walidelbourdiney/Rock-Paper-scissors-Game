@@ -7,8 +7,27 @@
     <title>Rock-Paper-scissors Game</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container flex">
       <h1>Rock-Paper-scissors Game</h1>
+      <div class="options flex">
+        <div id="rock">
+          <img src="rock.svg" alt="rock option" />
+        </div>
+        <div id="paper">
+          <img src="paper.svg" alt="paper option" />
+        </div>
+        <div id="scissors">
+          <img src="scissors-.svg" alt="scissors option" />
+        </div>
+      </div>
+      <div class="results">
+        <h2 id="player">PLAYER:</h2>
+        <h2 id="computer">COMPUTER:</h2>
+      </div>
+      <div class="scores">
+        <h3 id="playerScore">Player Score: 0</h3>
+        <h3 id="computerScore">Computer Score: 0</h3>
+      </div>
     </div>
 
     <script src="index.js"></script>

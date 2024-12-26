@@ -6,15 +6,17 @@ body {
   height: 100vh;
   font-family: "Montserrat", "Poppins", sans-serif;
   line-height: 1.5;
-  color: black;
-  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Glassmorphism card effect */
 .container {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
+  background-color: rgba(17, 25, 40, 0.5);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -38,60 +40,40 @@ h6 {
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 10px;
+  width: 80%;
 }
 .flex {
   display: flex;
-  align-items: center;
 }
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  text-decoration: underline;
-}
-button {
-  color: #f9f9f9;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: black;
-}
-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: black;
-}
-ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
+
 img {
   max-width: 100%;
   height: auto;
+  width: 100px;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  padding: 20px 50px;
 }
 
-@media screen and (max-width: 1200px) {
-  /* Large screens */
-  /* Styles for large screens (Desktops) */
+.container > .options {
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
 }
-
-@media screen and (max-width: 992px) {
-  /* Medium screens */
-  /* Styles for medium screens (Tablets) */
+#rock,
+#paper,
+#scissors {
+  width: 100px;
 }
-
-@media screen and (max-width: 768px) {
-  /* Small screens */
-  /* Styles for small screens (Mobile devices) */
-}
-
-@media screen and (max-width: 576px) {
-  /* Extra small screens */
-  /* Styles for extra small screens */
+.results {
+  margin-bottom: 30px;
 }
