@@ -22,7 +22,6 @@ let cScore = 0;
 
 rock.addEventListener("click", () => {
   let computerr = game();
-  console.log(computerr);
   switch (computerr) {
     case "rock":
       pScore = pScore;
@@ -36,7 +35,7 @@ rock.addEventListener("click", () => {
       pScore++;
       cScore = cScore;
       player.innerText = "PLAYER: rock";
-      computer.innerText = "COMPUTER: paper";
+      computer.innerText = "COMPUTER: scissors";
       playerScore.innerText = `Player Score: ${pScore}`;
       computerScore.innerText = `Computer Score: ${cScore}`;
       alert("You win!");
@@ -60,16 +59,16 @@ paper.addEventListener("click", () => {
     case "paper":
       pScore = pScore;
       cScore = cScore;
-      player.innerText = "PLAYER: rock";
-      computer.innerText = "COMPUTER: rock";
+      player.innerText = "PLAYER: paper";
+      computer.innerText = "COMPUTER: paper";
       alert("Tie!");
 
       break;
     case "rock":
       pScore++;
       cScore = cScore;
-      player.innerText = "PLAYER: rock";
-      computer.innerText = "COMPUTER: paper";
+      player.innerText = "PLAYER: paper";
+      computer.innerText = "COMPUTER: rock";
       playerScore.innerText = `Player Score: ${pScore}`;
       computerScore.innerText = `Computer Score: ${cScore}`;
       alert("You win!");
@@ -77,8 +76,8 @@ paper.addEventListener("click", () => {
     case "scissors":
       pScore = pScore;
       cScore++;
-      player.innerText = "PLAYER: rock";
-      computer.innerText = "COMPUTER: paper";
+      player.innerText = "PLAYER: paper";
+      computer.innerText = "COMPUTER: scissors";
       playerScore.innerText = `Player Score: ${pScore}`;
       computerScore.innerText = `Computer Score: ${cScore}`;
       alert("You lose!");
@@ -93,15 +92,15 @@ scissors.addEventListener("click", () => {
     case "scissors":
       pScore = pScore;
       cScore = cScore;
-      player.innerText = "PLAYER: rock";
-      computer.innerText = "COMPUTER: rock";
+      player.innerText = "PLAYER: scissors";
+      computer.innerText = "COMPUTER: scissors";
       alert("Tie!");
 
       break;
     case "paper":
       pScore++;
       cScore = cScore;
-      player.innerText = "PLAYER: rock";
+      player.innerText = "PLAYER: scissors";
       computer.innerText = "COMPUTER: paper";
       playerScore.innerText = `Player Score: ${pScore}`;
       computerScore.innerText = `Computer Score: ${cScore}`;
@@ -110,8 +109,8 @@ scissors.addEventListener("click", () => {
     case "rock":
       pScore = pScore;
       cScore++;
-      player.innerText = "PLAYER: rock";
-      computer.innerText = "COMPUTER: paper";
+      player.innerText = "PLAYER: scissors";
+      computer.innerText = "COMPUTER: rock";
       playerScore.innerText = `Player Score: ${pScore}`;
       computerScore.innerText = `Computer Score: ${cScore}`;
       alert("You lose!");
